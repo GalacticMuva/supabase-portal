@@ -9,7 +9,7 @@ function SupabaseForm() {
 
     const onSubmit = async (data) => {
         const { error } = await supabase
-            .from('portal_entries')
+            .from('Entries')
             .insert([data]);
 
         if (error) {
